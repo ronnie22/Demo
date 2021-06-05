@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,13 @@
 		FA4594AC2668D14500C4AD54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4594AA2668D14500C4AD54 /* Main.storyboard */; };
 		FA4594AE2668D14C00C4AD54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4594AD2668D14C00C4AD54 /* Assets.xcassets */; };
 		FA4594B12668D14C00C4AD54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4594AF2668D14C00C4AD54 /* LaunchScreen.storyboard */; };
+		FA4594BA2668DC5400C4AD54 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FA4594B92668DC5400C4AD54 /* IQKeyboardManagerSwift */; };
+		FA4594BC2668E0AD00C4AD54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4594BB2668E0AD00C4AD54 /* HomeViewController.swift */; };
+		FA4594BE2668E49000C4AD54 /* Constatn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4594BD2668E49000C4AD54 /* Constatn.swift */; };
+		FAAC8AAA266B257C00BF5FDA /* FTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC8AA8266B257C00BF5FDA /* FTableViewCell.swift */; };
+		FAAC8AAB266B257C00BF5FDA /* FTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAC8AA9266B257C00BF5FDA /* FTableViewCell.xib */; };
+		FAAC8AAE266B258A00BF5FDA /* STableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC8AAC266B258A00BF5FDA /* STableViewCell.swift */; };
+		FAAC8AAF266B258A00BF5FDA /* STableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAAC8AAD266B258A00BF5FDA /* STableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		FA4594AD2668D14C00C4AD54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA4594B02668D14C00C4AD54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA4594B22668D14C00C4AD54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4594BB2668E0AD00C4AD54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FA4594BD2668E49000C4AD54 /* Constatn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constatn.swift; sourceTree = "<group>"; };
+		FAAC8AA8266B257C00BF5FDA /* FTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTableViewCell.swift; sourceTree = "<group>"; };
+		FAAC8AA9266B257C00BF5FDA /* FTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FTableViewCell.xib; sourceTree = "<group>"; };
+		FAAC8AAC266B258A00BF5FDA /* STableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STableViewCell.swift; sourceTree = "<group>"; };
+		FAAC8AAD266B258A00BF5FDA /* STableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = STableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4594BA2668DC5400C4AD54 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +72,51 @@
 			children = (
 				FA4594A42668D14500C4AD54 /* AppDelegate.swift */,
 				FA4594A62668D14500C4AD54 /* SceneDelegate.swift */,
-				FA4594A82668D14500C4AD54 /* ViewController.swift */,
-				FA4594AA2668D14500C4AD54 /* Main.storyboard */,
+				FAE92F9B266B89A200DBEDE9 /* Model */,
+				FAE92F98266B3B2500DBEDE9 /* Controllers */,
+				FAE92F99266B3B3D00DBEDE9 /* View */,
+				FAE92F9A266B3B5500DBEDE9 /* CustomTableViewCell */,
+				FA4594BD2668E49000C4AD54 /* Constatn.swift */,
 				FA4594AD2668D14C00C4AD54 /* Assets.xcassets */,
 				FA4594AF2668D14C00C4AD54 /* LaunchScreen.storyboard */,
 				FA4594B22668D14C00C4AD54 /* Info.plist */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		FAE92F98266B3B2500DBEDE9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA4594A82668D14500C4AD54 /* ViewController.swift */,
+				FA4594BB2668E0AD00C4AD54 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FAE92F99266B3B3D00DBEDE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA4594AA2668D14500C4AD54 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAE92F9A266B3B5500DBEDE9 /* CustomTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC8AAC266B258A00BF5FDA /* STableViewCell.swift */,
+				FAAC8AA8266B257C00BF5FDA /* FTableViewCell.swift */,
+				FAAC8AAD266B258A00BF5FDA /* STableViewCell.xib */,
+				FAAC8AA9266B257C00BF5FDA /* FTableViewCell.xib */,
+			);
+			path = CustomTableViewCell;
+			sourceTree = "<group>";
+		};
+		FAE92F9B266B89A200DBEDE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +135,9 @@
 			dependencies = (
 			);
 			name = Demo;
+			packageProductDependencies = (
+				FA4594B92668DC5400C4AD54 /* IQKeyboardManagerSwift */,
+			);
 			productName = Demo;
 			productReference = FA4594A12668D14500C4AD54 /* Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +165,9 @@
 				Base,
 			);
 			mainGroup = FA4594982668D14400C4AD54;
+			packageReferences = (
+				FA4594B82668DC5400C4AD54 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = FA4594A22668D14500C4AD54 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -124,7 +182,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAC8AAB266B257C00BF5FDA /* FTableViewCell.xib in Resources */,
 				FA4594B12668D14C00C4AD54 /* LaunchScreen.storyboard in Resources */,
+				FAAC8AAF266B258A00BF5FDA /* STableViewCell.xib in Resources */,
 				FA4594AE2668D14C00C4AD54 /* Assets.xcassets in Resources */,
 				FA4594AC2668D14500C4AD54 /* Main.storyboard in Resources */,
 			);
@@ -137,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAC8AAA266B257C00BF5FDA /* FTableViewCell.swift in Sources */,
 				FA4594A92668D14500C4AD54 /* ViewController.swift in Sources */,
+				FA4594BE2668E49000C4AD54 /* Constatn.swift in Sources */,
 				FA4594A52668D14500C4AD54 /* AppDelegate.swift in Sources */,
+				FAAC8AAE266B258A00BF5FDA /* STableViewCell.swift in Sources */,
 				FA4594A72668D14500C4AD54 /* SceneDelegate.swift in Sources */,
+				FA4594BC2668E0AD00C4AD54 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA4594B82668DC5400C4AD54 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA4594B92668DC5400C4AD54 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA4594B82668DC5400C4AD54 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA4594992668D14400C4AD54 /* Project object */;
 }
